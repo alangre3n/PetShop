@@ -24,10 +24,12 @@ public class PetShop {
         if(man.getCash() > pet.getPrice()){
             if(pet instanceof Cat) {
                 this.cat = null;
-                System.out.println("Congratulations, you bought a cat!");
+                man.buyPet(pet);
+                man.setCash(man.getCash()- pet.getPrice());
             }else{
                 this.dog=null;
-                System.out.println("Congratulations, you bought a dog!");
+                man.buyPet(pet);
+                man.setCash(man.getCash()- pet.getPrice());
             }
             man.setPet(pet);
         }else{

@@ -11,7 +11,7 @@ public abstract class Animal implements IVoice{
     protected int age;
     protected double price;
 
-    public Animal(String name, int age, double cash) {
+    public Animal(String name, int age, double price) {
         this.name = name;
         this.age = age;
         this.price = price;
@@ -21,11 +21,11 @@ public abstract class Animal implements IVoice{
 
     @Override
     public String toString() {
-        return "Animal{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", price=" + price +
-                '}';
+        return "Animal" +
+                "name '" + name + '\'' +
+                ", age " + age +
+                ", price " + price ;
+
     }
 }
 

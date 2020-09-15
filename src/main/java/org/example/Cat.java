@@ -20,10 +20,9 @@ public class Cat extends Animal {
 
     @Override
     public String toString() {
-        return "Cat{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", price=" + price +
-                '}';
+        return "Cat " +
+                 name +
+                ", age= " + age +
+                ", price= " + price;
     }
 }
